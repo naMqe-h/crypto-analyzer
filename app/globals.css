@@ -19,6 +19,9 @@
 body {
   color: white;
   background-color: #1f2937;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .bg-second {
@@ -27,6 +30,14 @@ body {
 
 .color-primary {
   color: #dca54c
+}
+
+.defaultHeight {
+  height: calc(100vh - 90px);
+}
+
+.maxDefaultHeight {
+  max-height: calc(100vh - 120px);
 }
 
 @layer utilities {

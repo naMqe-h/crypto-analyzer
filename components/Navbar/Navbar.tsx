@@ -3,7 +3,7 @@ import Link from "next/link"
 export const Navbar = () => {
 
     return (
-        <div className="flex justify-between items-center p-4">
+        <div className="h-[90px] flex justify-between items-center p-4">
             <h1 className="text-2xl font-bold">Crypto Analyzer</h1>
             <div className="flex items-center gap-6">
                 <Link href="/" className="text-lg tracking-wider hover:text-[#dca54c]">Home</Link>
