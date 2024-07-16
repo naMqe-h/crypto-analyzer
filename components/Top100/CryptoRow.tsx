@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -31,7 +29,7 @@ export const CryptoRow = ({ coin }: CryptoRowProps) => {
                 <span className="text-center w-[100px] text-green-500">+{coin.price_change_percentage_30d_in_currency.toFixed(2)}%</span>
             ) : (
                 <span className="text-center w-[100px] text-red-500">{coin.price_change_percentage_30d_in_currency.toFixed(2)}%</span>
-            )}
+            )} 
             <span className="text-center w-[250px] text-white">{coin.market_cap.toLocaleString()}$</span>
             <span className="text-center w-[250px] text-white">{coin.total_volume.toLocaleString()}$</span>
         </div>

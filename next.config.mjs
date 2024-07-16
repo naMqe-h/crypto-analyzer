@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             { hostname: "coin-images.coingecko.com" },
         ],
-    },
+    }
 };
 
 export default nextConfig;
