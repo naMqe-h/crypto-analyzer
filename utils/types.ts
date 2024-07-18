@@ -29,3 +29,99 @@ interface ICoin {
     price_change_percentage_30d_in_currency: number,
     price_change_percentage_7d_in_currency: number,
 }
+
+interface IRaydiumPool {
+    type: string;
+    programId: string;
+    id: string;
+    mintA: {
+        chainId: number;
+        address: string;
+        programId: string;
+        logoURI: string;
+        symbol: string;
+        name: string;
+        decimals: number;
+        tags: string[];
+        extensions: object;
+    };
+    mintB: {
+        chainId: number;
+        address: string;
+        programId: string;
+        logoURI: string;
+        symbol: string;
+        name: string;
+        decimals: number;
+        tags: string[];
+        extensions: object;
+    };
+    rewardDefaultPoolInfos: string;
+    rewardDefaultInfos: {
+        mint: {
+            chainId: number;
+            address: string;
+            programId: string;
+            logoURI: string;
+            symbol: string;
+            name: string;
+            decimals: number;
+            tags: string[];
+            extensions: object;
+        };
+        perSecond: string;
+        startTime: string;
+        endTime: string;
+    }[];
+    price: number;
+    mintAmountA: number;
+    mintAmountB: number;
+    feeRate: number;
+    openTime: string;
+    tvl: number;
+    day: {
+        volume: number;
+        volumeQuote: number;
+        volumeFee: number;
+        apr: number;
+        feeApr: number;
+        priceMin: number;
+        priceMax: number;
+        rewardApr: number[];
+    };
+    week: {
+        volume: number;
+        volumeQuote: number;
+        volumeFee: number;
+        apr: number;
+        feeApr: number;
+        priceMin: number;
+        priceMax: number;
+        rewardApr: number[];
+    };
+    month: {
+        volume: number;
+        volumeQuote: number;
+        volumeFee: number;
+        apr: number;
+        feeApr: number;
+        priceMin: number;
+        priceMax: number;
+        rewardApr: number[];
+    };
+    pooltype: any[];
+    farmUpcomingCount: number;
+    farmOngoingCount: number;
+    farmFinishedCount: number;
+    config: {
+        id: string;
+        index: number;
+        protocolFeeRate: number;
+        tradeFeeRate: number;
+        tickSpacing: number;
+        fundFeeRate: number;
+        description: string;
+        defaultRange: number;
+        defaultRangePoint: number[];
+    };
+}

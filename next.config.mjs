@@ -3,6 +3,7 @@ const nextConfig = {
     images: {
         remotePatterns: [
             { hostname: "coin-images.coingecko.com" },
+            { hostname: "img-v1.raydium.io" },
         ],
     }
 };
